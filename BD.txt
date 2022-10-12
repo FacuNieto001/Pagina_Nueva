@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS login;
+CREATE DATABASE login;
+USE login;
+
+CREATE TABLE users (
+	id BIGINT UNSIGNED AUTO_INCREMENT,
+    user VARCHAR(50),
+    name VARCHAR(100),
+    rol VARCHAR(50),
+    pass VARCHAR(255),
+    PRIMARY KEY (id))ENGINE=InnoDB;
